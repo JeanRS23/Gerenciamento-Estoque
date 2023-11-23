@@ -3,25 +3,69 @@ package br.senai.sp.jandira.model;
 import java.util.Scanner;
 
 public class Cliente {
-
     Scanner scanner = new Scanner(System.in);
 
-    String nome, sobrenome;
-    long cpf, rg;
+    String nome, sobrenome, email;
+    long cpf;
 
-    public void cadastrarCliente(){
+    public void cadastrarCLiente(){
 
         System.out.println("Informe seu Nome: ");
-        nome = scanner.nextLine();
+        this.nome = scanner.nextLine();
         System.out.println("Informe o Sobrenome: ");
-        sobrenome = scanner.nextLine();
-        System.out.println("Informe seu RG: ");
-        rg = scanner.nextLong();
+        this.sobrenome = scanner.nextLine();
+        System.out.println("Informe seu Email: ");
+        this.email = scanner.nextLine();
         System.out.println("Informe seu CPF: ");
-        cpf = scanner.nextLong();
-
-
-
+        this.cpf = scanner.nextLong();
+        scanner.nextLine();
     }
 
+
+
+
+
+
+
+
+
+    public Scanner getScanner() {
+        return scanner;
+    }
+
+    public void setScanner(Scanner scanner) {
+        this.scanner = scanner;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
+
+    public long getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(long cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

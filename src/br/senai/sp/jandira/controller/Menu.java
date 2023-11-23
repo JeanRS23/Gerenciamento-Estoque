@@ -37,7 +37,7 @@ public class Menu {
 
                 case 1:
                     Cliente cliente = new Cliente();
-                    cliente.cadastrarCliente();
+                    cliente.cadastrarCLiente();
                     break;
 
                 case 2:
